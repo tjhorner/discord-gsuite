@@ -1,0 +1,32 @@
+port: "3000"
+host: "http://localhost:3000"
+sessionSecret: "asjdhdksjfsdfkjsfdhf"
+
+discord:
+  # Client ID for your app
+  clientId: ""
+  # Client secret for your app
+  clientSecret: ""
+  # The guild users should be added to when successfully authenticated
+  targetGuildId: ""
+  # The role users should be given when successfully authenticated
+  targetRoleId: ""
+  # OAuth token for the bot that will give authenticated users their roles
+  botToken: ""
+  # Scopes to request from users. Defaults should be fine, but change them if you wish
+  scopes:
+    - identify
+    - guilds
+    - guilds.join
+
+google:
+  # Client ID for your app
+  clientId: ""
+  # Client secret for your app
+  clientSecret: ""
+  # List of allowed G Suite domains
+  allowedDomains: [ ]
+  # Scopes to request from users. Defaults should be fine, but change them if you wish
+  scopes:
+    - profile
+    - email

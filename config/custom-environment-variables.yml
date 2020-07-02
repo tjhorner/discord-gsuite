@@ -1,0 +1,23 @@
+port: PORT
+host: HOST
+sessionSecret: SESSION_SECRET
+
+discord:
+  clientId: DISCORD_CLIENT_ID
+  clientSecret: DISCORD_CLIENT_SECRET
+  targetGuildId: DISCORD_TARGET_GUILD_ID
+  targetRoleId: DISCORD_TARGET_ROLE_ID
+  botToken: DISCORD_BOT_TOKEN
+  scopes:
+    __name: DISCORD_SCOPES
+    __format: json
+
+google:
+  clientId: GOOGLE_CLIENT_ID
+  clientSecret: GOOGLE_CLIENT_SECRET
+  allowedDomains:
+    __name: GOOGLE_ALLOWED_DOMAINS
+    __format: json
+  scopes:
+    __name: GOOGLE_SCOPES
+    __format: json
