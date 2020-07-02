@@ -6,6 +6,6 @@ module.exports = new DiscordStrategy({
   clientSecret: config.discord.clientSecret,
   callbackURL: `${config.host}/oauth/discord/callback`,
   scope: config.discord.scopes
-}, (_, _, profile, cb) => {
+}, (accessToken, refreshToken, profile, cb) => {
   cb(null, profile)
 })

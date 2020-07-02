@@ -12,6 +12,6 @@ module.exports = new GoogleStrategy({
   callbackURL: `${config.host}/oauth/google/callback`,
   authorizationURL,
   scope: config.google.scopes
-}, (_, _, profile, cb) => {
+}, (accessToken, refreshToken, profile, cb) => {
   cb(null, profile)
 })
